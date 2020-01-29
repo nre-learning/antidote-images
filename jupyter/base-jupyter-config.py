@@ -8,5 +8,6 @@ c.NotebookApp.password = ''
 
 c.NotebookApp.notebook_dir = '/antidote'
 
-# For embedding inside other pages
-c.NotebookApp.tornado_settings = { 'headers': { 'Content-Security-Policy': "frame-ancestors 'self' https://nrelabs.io/" } }
+# We need to do this since we want to permit the use of this inside an iframe
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors
+c.NotebookApp.tornado_settings = { 'headers': { 'Content-Security-Policy': "frame-ancestors 'self' https://*.nrelabs.io/" } }
