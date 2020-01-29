@@ -9,4 +9,4 @@ c.NotebookApp.password = ''
 c.NotebookApp.notebook_dir = '/antidote'
 
 # For embedding inside other pages
-c.NotebookApp.tornado_settings = { 'headers': { 'Content-Security-Policy': "frame-ancestors 'self' https://labs.networkreliability.engineering/" } }
+c.NotebookApp.tornado_settings = { 'headers': { 'Content-Security-Policy': "frame-ancestors 'self' https://nrelabs.io/" } }

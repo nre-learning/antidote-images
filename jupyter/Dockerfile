@@ -22,7 +22,7 @@ RUN mkdir -p /opt/jupyterssl
 ENTRYPOINT ["tini", "-g", "--"]
 # CMD /usr/local/bin/start-notebook.sh --certfile=/opt/jupyterssl/fullchain.pem --keyfile=/opt/jupyterssl/privkey.pem --NotebookApp.base_url="/$SYRINGE_FULL_REF/"
 
-CMD /usr/local/bin/start-notebook.sh --NotebookApp.base_url="/$SYRINGE_FULL_REF/"
+CMD /usr/local/bin/start-notebook.sh --NotebookApp.base_url="/"
 
 # Switch back to jovyan to avoid accidental container runs as root
 USER $NB_UID
