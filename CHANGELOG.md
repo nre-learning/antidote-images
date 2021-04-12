@@ -2,6 +2,9 @@
 
 ## In development
 
+
+## v0.7.0 - December 14, 2020
+
 - Simplify configure.py script for napalm option [#5](https://github.com/nre-learning/antidote-images/pull/5)
 
 ## v0.6.2 - May 03, 2020
